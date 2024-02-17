@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RaumZumSein</title>
+    <link rel="stylesheet" href="src\stylesheets\mainStyle.css" />
+    <link rel="stylesheet" href="src\stylesheets\heroStyle.css" />
+    <link rel="stylesheet" href="src\stylesheets\anwendungenStyle.css" />
+    <link rel="stylesheet" href="src\stylesheets\kontaktStyle.css" />
+    <link rel="stylesheet" href="src\stylesheets\emStyle.css" />
+    <link rel="stylesheet" href="src\stylesheets\aktuellesStyle.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italiana&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Italiana&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <div class="navBar">
+      <img src="assets\img\logo-placeholder.png" width="30px" height="30px" />
+      <img src="assets\svg\menuButton.svg" width="30px" height="30px" />
+    </div>
+    <!--HERO-->
+    <div id="hero">
+      <div id="heroScroll" class="section"></div>
+      <div id="heroBgImage">
+        <img
+          src="assets\img\HeroBgImageV5.png"
+          width="1725px"
+          height="1302px"
+        />
+      </div>
+      <div id="sloganMovable">
+        <div id="sloganContainer">
+          <div id="sloganBg">
+            <div id="yellowCircle" class="rotate"></div>
+            <div id="orangeCircle" class="rotate"></div>
+            <div id="redCircle" class="rotate"></div>
+          </div>
+          <div id="sloganContent">
+            <div id="sloganText">
+              <div id="mainSlogan">
+                <h2>Raum zum Sein</h2>
+              </div>
+              <div id="subSlogan">
+                <h4>Weite</h4>
+                <h4>Energie</h4>
+                <h4>Ankommen</h4>
+              </div>
+            </div>
+            <a href="src/pages/kontakt.html" style="text-decoration: none">
+              <div id="heroContactButton">
+                <button id="contactButton">
+                  <p>Kontakt</p>
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="heroCut"></div>
+    </div>
+
+    <!--ANWENDUNGEN-->
+    <div class="anwendungen section">
+      <h2>Anwendungen</h2>
+      <div id="anwendungenItems">
+        <div class="anwendung">
+          <a
+            href="src/pages/anwendungen.html#fus"
+            style="text-decoration: none; color: inherit"
+          >
+            <div id="energetischeFussmassage" class="anwendungImg"></div>
+            <div class="anwendungText">
+              <h4>Energetische</h4>
+              <h4 class="bottomText">Fußmassage</h4>
+            </div>
+          </a>
+        </div>
+        <div class="anwendung">
+          <a
+            href="src/pages/anwendungen.html#bar"
+            style="text-decoration: none; color: inherit"
+          >
+            <div id="accessBars" class="anwendungImg"></div>
+            <div class="anwendungText">
+              <h4>Access</h4>
+              <h4 class="bottomText">Bars</h4>
+            </div>
+          </a>
+        </div>
+        <div class="anwendung">
+          <a
+            href="src/pages/anwendungen.html#face"
+            style="text-decoration: none; color: inherit"
+          >
+            <div id="accessFacelift" class="anwendungImg"></div>
+            <div class="anwendungText">
+              <h4>Access</h4>
+              <h4 class="bottomText">Facelift</h4>
+            </div>
+          </a>
+        </div>
+        <div class="anwendung">
+          <a
+            href="src/pages/anwendungen.html#emas"
+            style="text-decoration: none; color: inherit"
+          >
+            <div id="energetischeMassage" class="anwendungImg"></div>
+            <div class="anwendungText">
+              <h4>Energetische</h4>
+              <h4 class="bottomText">Massage</h4>
+            </div>
+          </a>
+        </div>
+        <div class="anwendung">
+          <a
+            href="src/pages/anwendungen.html#bio"
+            style="text-decoration: none; color: inherit"
+          >
+            <div id="biophotonenLicht" class="anwendungImg"></div>
+            <div class="anwendungText">
+              <h4>Biophotonen</h4>
+              <h4 class="bottomText">Licht</h4>
+            </div>
+          </a>
+        </div>
+        <div class="anwendung">
+          <a
+            href="src/pages/anwendungen.html#oel"
+            style="text-decoration: none; color: inherit"
+          >
+            <div id="aetherischeOele" class="anwendungImg"></div>
+            <div class="anwendungText">
+              <h4>Ätherische</h4>
+              <h4 class="bottomText">Öle</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--KONTAKT-->
+    <div class="kontakt section">
+      <div id="portraitImg"></div>
+      <div id="kontaktBelow">
+        <p id="zitat">
+          "Ich freue mich, Sie ein Stück Ihres Weges begleiten zu dürfen"
+        </p>
+        <a href="src/pages/kontakt.html" style="text-decoration: none">
+          <div id="kontaktContactButton">
+            <button id="contactButton">
+              <p>Interesse</p>
+            </button>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!--EM-->
+    <div id="emMovable" class="section">
+      <a href="src/pages/aktuelles.html" style="text-decoration: none">
+        <div class="emContainer">
+          <div id="emBg">
+            <div id="yellowCircle" class="rotate"></div>
+            <div id="orangeCircle" class="rotate"></div>
+            <div id="redCircle" class="rotate"></div>
+          </div>
+          <div class="em">
+            <h2>EM</h2>
+            <p>
+              Effektive Microorganisms (EM) sind nützliche Mikroorganismen, die
+              in Landwirtschaft, Abfallbehandlung und Umweltschutz eingesetzt
+              werden, um Boden, Pflanzen und Tiere positiv zu beeinflussen.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!--AKTUELLES-->
+    <div id="aktuellesMovable" class="section">
+      <h2>Aktuelles</h2>
+      <a href="src/pages/aktuelles.html" style="text-decoration: none">
+        <div id="aktuellesContainer">
+          <h3>Vortrag</h3>
+          <div id="aktuellesContent">
+            <p>
+              Hall ich halte demnächst eine vortrag kommt vorbei sonst knallst
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+              quam dolore dignissimos officiis corrupti magni ex laboriosam
+              assumenda quis sint fugiat totam, harum alias necessitatibus eum
+              eveniet asperiores ut eligendi. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Harum ea dolores cumque ex.
+              Temporibus fugit rerum, ad iusto nulla aliquam nobis. Maiores
+              architecto blanditiis iste harum earum provident, at nisi. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Repellendus
+              quisquam inventore impedit quae nostrum eum consequuntur unde
+              aliquam officia tempore, et commodi reiciendis hic dolores
+              architecto expedita, in earum praesentium!
+            </p>
+            <div id="aktuellesImg"></div>
+          </div>
+        </div>
+      </a>
+      <a href="src/pages/aktuelles.html" style="text-decoration: none">
+        <p id="mehrAnzeigen">Mehr Anzeigen</p>
+      </a>
+    </div>
+    <!--IMPRESSUM-->
+    <div class="impressumContainer section">
+      <a href="src/pages/impressum.html" style="text-decoration: none">
+        <div id="impressum">
+          <h4>Impressum</h4>
+        </div>
+      </a>
+      <a href="src/pages/datenschutz.html" style="text-decoration: none">
+        <div id="datenschutz">
+          <h4>Datenschutz</h4>
+        </div>
+      </a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        var scroll = $(document).scrollTop();
+        var navHeight = $(".navBar").outerHeight();
+        $(window).scroll(function () {
+          var scrolled = $(document).scrollTop();
+          if (scrolled > navHeight) {
+            $(".navBar").addClass("animate");
+          } else {
+            $(".navBar").removeClass("animate");
+          }
+          if (scrolled > scroll) {
+            $(".navBar").removeClass("sticky");
+          } else {
+            $(".navBar").addClass("sticky");
+          }
+          scroll = $(document).scrollTop();
+        });
+      });
+    </script>
+  </body>
+</html>

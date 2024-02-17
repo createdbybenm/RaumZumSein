@@ -1,0 +1,36 @@
+body {
+  font-family: "Inter";
+  color: #6d675c;
+}
+#impressumMovable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.impressum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  max-width: 750px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+p {
+  text-align: center;
+}
+.datenschutz {
+  text-align: center;
+  padding-top: 2rem;
+  max-width: 750px;
+  margin: 3rem;
+}
+#datenschutzMovable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

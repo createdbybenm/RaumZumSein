@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="../stylesheets/mainStyle.css" />
+    <link rel="stylesheet" href="../stylesheets/kontaktStyle.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Italiana&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="kontaktFormularMovable">
+      <div class="kontaktFormular">
+        <h1>Kontakt</h1>
+        <form method="post" class="kontaktDaten">
+          <label>Name:</label>
+          <input type="text" class="input" />
+          <label>E-Mail (Pflichtfeld):</label>
+          <input type="email" class="input" />
+          <label>Betreff:</label>
+          <input type="text" class="input" />
+          <label>Nachricht:</label>
+          <textarea rows="7" class="input"></textarea>
+          <label>
+            Ich habe die Datenschutzerklärung zu Kenntnis genommen
+          </label>
+          <input type="checkbox" id="datenschutzAkzeptieren" />
+        </form>
+        <div id="heroContactButton kontaktSendenButton">
+          <button id="contactButton">
+            <p>Senden</p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

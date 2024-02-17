@@ -1,0 +1,198 @@
+.anwendungen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: -40rem;
+  font-family: "Inter";
+  color: #6d675c;
+  margin-bottom: 7rem;
+}
+
+.anwendungen h2 {
+  font-size: 2.3rem;
+  text-decoration: underline;
+  margin-bottom: 5rem;
+  margin-top: -5rem;
+  padding-top: 5rem;
+}
+
+.anwendung {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.anwendungImg {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 100%;
+  background-size: 100%;
+  background-position: center;
+  outline: 4px solid #6d675c;
+  transition: 0.8s;
+}
+.anwendungImg:hover {
+  background-size: 104%;
+  background-position: center;
+  transition: 0.5s;
+}
+
+.anwendungText {
+  font-size: 1.7rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -0.5rem;
+}
+.anwendungText:hover {
+  text-decoration: underline 3px #6d675c;
+}
+.bottomText {
+  margin-top: -1.7rem;
+}
+
+#energetischeFussmassage {
+  background-image: url(../../assets/img/EnergetischeFussmassage.png);
+}
+
+#accessBars {
+  background-image: url(../../assets/img/AccessBars.png);
+}
+
+#accessFacelift {
+  background-image: url(../../assets/img/AccessFacelift.png);
+}
+
+#energetischeMassage {
+  background-image: url(../../assets/img/EnergetischeMassage.png);
+}
+
+#biophotonenLicht {
+  background-image: url(../../assets/img/BiophotonenLicht.png);
+}
+
+#aetherischeOele {
+  background-image: url(../../assets/img/AetherischeOele.png);
+}
+
+#accessBars:hover,
+#energetischeMassage:hover,
+#aetherischeOele:hover {
+  box-shadow: 0px 0px 20px 0 #f2994b inset;
+}
+#energetischeFussmassage:hover,
+#accessFacelift:hover,
+#biophotonenLicht:hover {
+  box-shadow: 0px 0px 20px 0 #d95d41 inset;
+}
+
+@media (min-width: 576px) {
+  #anwendungenItems {
+    display: flex;
+    column-gap: 25%;
+    row-gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 2;
+  }
+  .anwendungImg {
+    scale: 115%;
+  }
+  .anwendungText {
+    scale: 110%;
+  }
+}
+
+/*Anwendung Page*/
+#imgMovable {
+  scale: 120%;
+  padding-bottom: 2rem;
+}
+.anwendungPage {
+  height: fit-content;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-around;
+  padding-top: 4.5rem;
+}
+.energetischeFussmassage,
+.accessFacelift,
+.biophotonenLicht {
+  flex-direction: column-reverse;
+}
+.accessBars,
+.energetischeMassage,
+.aetherischeOele {
+}
+
+.anwendungTextP h4 {
+  font-size: 1.2rem;
+}
+.anwendungTextP {
+  flex-basis: 50vw;
+  text-align: center;
+  flex-wrap: wrap;
+  font-family: "Inter";
+  color: #6d675c;
+}
+.anwendungTextP h2 {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+.anwendungTextP h3 {
+  font-size: 1.6rem;
+}
+
+.anwendungTextP:hover {
+  text-decoration: none;
+}
+.anwendungTextP {
+  flex-basis: 50vw;
+}
+.anwengungenPageMovable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#anwendungenPH1 {
+  font-family: "Inter";
+  color: #6d675c;
+  font-size: 2.6rem;
+  text-decoration: underline;
+  padding-top: 2rem;
+}
+
+@media (min-width: 576px) {
+  #imgMovable {
+    padding-bottom: 0rem;
+  }
+  .anwendungPage {
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    column-gap: 20%;
+  }
+}
+@media (min-width: 1152px) {
+  #imgMovable {
+    scale: 150%;
+  }
+  .anwendungPage {
+    padding-top: 18rem;
+    column-gap: 10%;
+  }
+  #anwendungenPH1 {
+    font-size: 2.8rem;
+    margin-bottom: -10rem;
+  }
+}
