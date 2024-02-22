@@ -15,6 +15,16 @@
     />
   </head>
   <body>
+    <!--NAVBAR-->
+    <div class="navBar">
+      <img
+        src="../../assets/img/Logo-Placeholder.png"
+        width="30px"
+        height="30px"
+      />
+      <img src="../../assets/svg/menuButton.svg" width="30px" height="30px" />
+    </div>
+    <!--ANWENDUNGEN PAGE-->
     <div class="anwengungenPageMovable">
       <h1 id="anwendungenPH1">Anwendungen</h1>
       <div class="energetischeFussmassage anwendungPage" id="fus">
@@ -151,7 +161,23 @@
         </div>
         <div class="anwendungTextP">
           <h2>Energetische Massage</h2>
-          <h4></h4>
+          <h4>
+            Ich massiere mit sanften Bewegungen und Berührungen belastete
+            Stellen am Körper. Die Energiearbeit unterstützt den
+            Bewusstwerdungsprozess, sodass wieder eine gesunde Ordnung eintreten
+            kann. Auf Wunsch verwende ich bei der Massage die hochreinen
+            ätherischen Öle von Amantha Spirit, die Sie auch nach der Behandlung
+            wunderbar unterstützen können.<br /><br />
+
+            Die Energetische Massage ist mit anderen Behandlungen wunderbar
+            kombinierbar.<br /><br />
+
+            Vorgespräch und ca. 15 Min. Nachruhe<br />
+            Behandlung<br />
+            20 Min. = 25 €<br />
+            30 Min. = 35 €<br />
+            40 Min. = 45 €
+          </h4>
         </div>
       </div>
       <div class="biophotonenLicht anwendungPage" id="bio">
@@ -220,9 +246,60 @@
         </div>
         <div class="anwendungTextP">
           <h2>Ätherische Öle</h2>
-          <h4>Energetische</h4>
+          <h4>
+            100% naturrein - höchste Qualität, dies versprechen die wunderbaren
+            Öle und Ölmischungen von der Fa. Amantha Spirit.<br /><br />
+
+            Ich liebe diese Öle sehr! Sie haben eine enorme Wirkung und
+            unterstützen und begleiten auf Wunsch all meine Massagen. Auch
+            zwischen den Behandlungen sind sie ein wertvoller Begleiter.<br /><br />
+
+            Diese wertvollen Öle können Sie auch gerne über mich beziehen. Die
+            ganze Vielfalt der Öle und Ölmischungen, sowie viele Bewertungen und
+            Rückmeldungen von Kunden finden Sie unterstützen
+            <a
+              href="www.aromergy.de"
+              style="text-decoration: inherit; color: inherit"
+              >www.aromergy.de</a
+            >
+          </h4>
         </div>
       </div>
     </div>
+    <!--IMPRESSUM-->
+    <div class="impressumContainer section">
+      <a href="src/pages/impressum.html" style="text-decoration: none">
+        <div id="impressum">
+          <h4>Impressum</h4>
+        </div>
+      </a>
+      <a href="src/pages/datenschutz.html" style="text-decoration: none">
+        <div id="datenschutz">
+          <h4>Datenschutz</h4>
+        </div>
+      </a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        var scroll = $(document).scrollTop();
+        var navHeight = $(".navBar").outerHeight();
+        $(window).scroll(function () {
+          var scrolled = $(document).scrollTop();
+          if (scrolled > navHeight) {
+            $(".navBar").addClass("animate");
+          } else {
+            $(".navBar").removeClass("animate");
+          }
+          if (scrolled > scroll) {
+            $(".navBar").removeClass("sticky");
+          } else {
+            $(".navBar").addClass("sticky");
+          }
+          scroll = $(document).scrollTop();
+        });
+      });
+    </script>
   </body>
 </html>

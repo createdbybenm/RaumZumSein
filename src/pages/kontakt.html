@@ -15,6 +15,16 @@
     />
   </head>
   <body>
+    <!--NAVBAR-->
+    <div class="navBar">
+      <img
+        src="../../assets/img/Logo-Placeholder.png"
+        width="30px"
+        height="30px"
+      />
+      <img src="../../assets/svg/menuButton.svg" width="30px" height="30px" />
+    </div>
+    <!--KONTAKT-->
     <div id="kontaktFormularMovable">
       <div class="kontaktFormular">
         <h1>Kontakt</h1>
@@ -26,7 +36,11 @@
           <label>Betreff:</label>
           <input type="text" class="input" />
           <label>Nachricht:</label>
-          <textarea rows="7" class="input"></textarea>
+          <textarea
+            rows="7"
+            class="input"
+            style="min-height: 160px; max-height: 160px"
+          ></textarea>
           <label>
             Ich habe die Datenschutzerklärung zu Kenntnis genommen
           </label>
@@ -38,6 +52,19 @@
           </button>
         </div>
       </div>
+    </div>
+    <!--IMPRESSUM-->
+    <div class="impressumContainer section" id="kontaktImpressum">
+      <a href="src/pages/impressum.html" style="text-decoration: none">
+        <div id="impressum">
+          <h4>Impressum</h4>
+        </div>
+      </a>
+      <a href="src/pages/datenschutz.html" style="text-decoration: none">
+        <div id="datenschutz">
+          <h4>Datenschutz</h4>
+        </div>
+      </a>
     </div>
   </body>
 </html>
