@@ -7,7 +7,7 @@ body {
 }
 @media (min-width: 1152px) {
   html {
-    scroll-snap-type: y proximity;
+    /*scroll-snap-type: y mandatory;*/
   }
   .section {
     scroll-snap-align: center;
@@ -15,8 +15,11 @@ body {
 }
 
 .navBar {
+  list-style: none;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: linear-gradient(
     180deg,
     #76706457 0%,
@@ -24,7 +27,6 @@ body {
   );
   padding: 0.75rem;
   position: fixed;
-  width: 100dvw;
   transition: all 300ms ease-in-out;
   top: 0px;
 }
@@ -90,6 +92,41 @@ body {
   animation-duration: 6s;
   transform-origin: 55% 55%;
   animation-delay: 1s;
+}
+
+.sideBar {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  height: 100vh;
+  max-width: 250px;
+  z-index: 9999;
+  background-color: #d9cdb839;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  backdrop-filter: blur(10px);
+}
+nav ul {
+  width: 100%;
+  list-style: none;
+}
+nav li {
+  height: 50px;
+  width: 100%;
+}
+nav li:hover {
+  background-color: #8d857728;
+}
+nav a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #6d675c;
+  padding: 0, 30px;
+  display: flex;
+  align-items: center;
 }
 
 @keyframes rotate {

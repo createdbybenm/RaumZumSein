@@ -24,10 +24,50 @@
   </head>
   <body>
     <!--NAVBAR-->
-    <div class="navBar">
-      <img src="assets\img\logo-placeholder.png" width="30px" height="30px" />
-      <img src="assets\svg\menuButton.svg" width="30px" height="30px" />
-    </div>
+    <ul class="navBar">
+      <li>
+        <img src="assets/img/Logo-Placeholder.png" width="30px" height="30px" />
+      </li>
+      <li onclick="showSidebar()">
+        <a href="#"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="30"
+            viewBox="0 -960 960 960"
+            width="30"
+            fill="#6d675c"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <nav>
+      <ul class="sideBar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+              fill="#6d675c"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Kontakt</a></li>
+        <li><a href="#">Anwendungen</a></li>
+        <li><a href="#">EM</a></li>
+        <li><a href="#">Aktuelles</a></li>
+      </ul>
+    </nav>
     <!--HERO-->
     <div id="hero">
       <div id="heroScroll" class="section"></div>
@@ -246,6 +286,15 @@
           scroll = $(document).scrollTop();
         });
       });
+
+      function showSidebar() {
+        const sidebar = document.querySelector(".sideBar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sideBar");
+        sidebar.style.display = "none";
+      }
     </script>
   </body>
 </html>
