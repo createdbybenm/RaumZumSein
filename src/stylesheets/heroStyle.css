@@ -6,8 +6,11 @@
 #heroBgImage {
   z-index: -3;
   position: absolute;
-  top: -13rem;
-  left: -40rem;
+  width: 100vw;
+  overflow-x: hidden;
+}
+#heroBgImage img {
+  transform: translateX(-40rem) translateY(-13rem);
 }
 #sloganMovable {
   display: flex;
@@ -78,9 +81,8 @@
 }
 
 @media (min-width: 576px) {
-  #heroBgImage {
-    top: -15rem;
-    left: -23rem;
+  #heroBgImage img {
+    transform: translateX(-20rem) translateY(-10rem);
     scale: 115%;
   }
   #sloganMovable {
@@ -98,10 +100,9 @@
 }
 
 @media (min-width: 1152px) {
-  #heroBgImage {
-    left: 5rem;
+  #heroBgImage img {
+    transform: translateX(5rem) translateY(-10rem) scaleX(-1);
     scale: 121%;
-    transform: translateY(-5rem) scaleX(-1);
   }
   #sloganMovable {
     transform: scale(150%);

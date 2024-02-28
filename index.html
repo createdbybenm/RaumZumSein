@@ -71,12 +71,14 @@
     <!--HERO-->
     <div id="hero">
       <div id="heroScroll" class="section"></div>
-      <div id="heroBgImage">
-        <img
-          src="assets\img\HeroBgImageV5.png"
-          width="1725px"
-          height="1302px"
-        />
+      <div id="heroImgWrapper">
+        <div id="heroBgImage">
+          <img
+            src="assets\img\HeroBgImageV5.png"
+            width="1725px"
+            height="1302px"
+          />
+        </div>
       </div>
       <div id="sloganMovable">
         <div id="sloganContainer">
@@ -267,7 +269,7 @@
     </div>
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
-    <script type="text/javascript">
+    <script src="/src/script/script.js">
       /*
       $(function () {
         var scroll = $(document).scrollTop();
@@ -296,9 +298,12 @@
         const sidebar = document.querySelector(".sideBar");
         sidebar.style.display = "none";
       }
-      */
 
-      const navBar = document.querySelector("navBar");
+      window.addEventListener("scroll", showNavBar(){
+        const navBar = document.querySelector(".navBar");
+        navBar.classList.toggle("animate", window.scrollY > 0);
+      });
+
       const showNavBar = () => {
         navBar.classList.toggle("sticky", window.scrollY > 0);
       };
