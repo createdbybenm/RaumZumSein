@@ -73,6 +73,20 @@
   align-items: center;
 }
 
+/* AKTUELLES PAGE */
+.aktuellePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #6d675c;
+  font-family: "Inter";
+}
+h1 {
+  font-size: 2.8rem;
+  margin-top: 4.5rem;
+  text-decoration: underline;
+}
+
 @media (min-width: 576px) {
   #aktuellesMovable {
     margin-bottom: 15rem;
