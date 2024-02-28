@@ -82,7 +82,7 @@
 
 @media (min-width: 576px) {
   #heroBgImage img {
-    transform: translateX(-20rem) translateY(-10rem);
+    transform: translateX(-23rem) translateY(-10rem);
     scale: 115%;
   }
   #sloganMovable {
@@ -101,7 +101,7 @@
 
 @media (min-width: 1152px) {
   #heroBgImage img {
-    transform: translateX(5rem) translateY(-10rem) scaleX(-1);
+    transform: translateX(5rem) translateY(-17rem) scaleX(-1);
     scale: 121%;
   }
   #sloganMovable {

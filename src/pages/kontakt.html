@@ -16,14 +16,54 @@
   </head>
   <body>
     <!--NAVBAR-->
-    <div class="navBar">
-      <img
-        src="../../assets/img/Logo-Placeholder.png"
-        width="30px"
-        height="30px"
-      />
-      <img src="../../assets/svg/menuButton.svg" width="30px" height="30px" />
-    </div>
+    <ul class="navBar">
+      <li>
+        <img
+          src="../../assets/img/Logo-Placeholder.png"
+          width="30px"
+          height="30px"
+        />
+      </li>
+      <li onclick="showSidebar()">
+        <a href="#"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="30"
+            viewBox="0 -960 960 960"
+            width="30"
+            fill="#6d675c"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <nav>
+      <ul class="sideBar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+              fill="#6d675c"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../pages/kontakt.html">Kontakt</a></li>
+        <li><a href="../pages/anwendungen.html">Anwendungen</a></li>
+        <li><a href="../pages/em.html">EM</a></li>
+        <li><a href="../pages/aktuelles.html">Aktuelles</a></li>
+      </ul>
+    </nav>
     <!--KONTAKT-->
     <div id="kontaktFormularMovable">
       <div class="kontaktFormular">
@@ -55,16 +95,17 @@
     </div>
     <!--IMPRESSUM-->
     <div class="impressumContainer section" id="kontaktImpressum">
-      <a href="src/pages/impressum.html" style="text-decoration: none">
+      <a href="../pages/impressum.html" style="text-decoration: none">
         <div id="impressum">
           <h4>Impressum</h4>
         </div>
       </a>
-      <a href="src/pages/datenschutz.html" style="text-decoration: none">
+      <a href="../pages/impressum.html" style="text-decoration: none">
         <div id="datenschutz">
           <h4>Datenschutz</h4>
         </div>
       </a>
     </div>
+    <script src="../script/script.js"></script>
   </body>
 </html>

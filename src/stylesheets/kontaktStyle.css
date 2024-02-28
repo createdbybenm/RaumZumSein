@@ -73,7 +73,7 @@
 .kontaktDaten {
   display: flex;
   flex-direction: column;
-  width: 50vw;
+  width: 80vw;
   row-gap: 0.5rem;
 }
 #datenschutzAkzeptieren {
@@ -99,4 +99,12 @@
   }
 
   /* KONTAKTFORMULAR */
+  .kontaktDaten {
+    width: 65vw;
+  }
+}
+@media (min-width: 1152px) {
+  .kontaktDaten {
+    width: 50vw;
+  }
 }
