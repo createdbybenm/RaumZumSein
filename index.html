@@ -61,11 +61,11 @@
             </svg>
           </a>
         </li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Kontakt</a></li>
-        <li><a href="#">Anwendungen</a></li>
-        <li><a href="#">EM</a></li>
-        <li><a href="#">Aktuelles</a></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/src/pages/kontakt.html">Kontakt</a></li>
+        <li><a href="/src/pages/anwendungen.html">Anwendungen</a></li>
+        <li><a href="/src/pages/em.html">EM</a></li>
+        <li><a href="/src/pages/aktuelles.html">Aktuelles</a></li>
       </ul>
     </nav>
     <!--HERO-->
@@ -266,8 +266,9 @@
       </a>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+    <script type="text/javascript">
+      /*
       $(function () {
         var scroll = $(document).scrollTop();
         var navHeight = $(".navBar").outerHeight();
@@ -295,6 +296,17 @@
         const sidebar = document.querySelector(".sideBar");
         sidebar.style.display = "none";
       }
+      */
+
+      const navBar = document.querySelector("navBar");
+      const showNavBar = () => {
+        navBar.classList.toggle("sticky", window.scrollY > 0);
+      };
+      const hideNavBar = () => {
+        navBar.classList.toggle("animate", window.scrollY < 0);
+      };
+
+      window.addEventListener("scroll", showNavBar());
     </script>
   </body>
 </html>
