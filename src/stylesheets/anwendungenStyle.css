@@ -140,6 +140,7 @@
 .anwendungTextP h2 {
   font-size: 2rem;
   text-decoration: underline;
+  font-weight: 500;
 }
 .anwendungTextP h3 {
   font-size: 1.6rem;

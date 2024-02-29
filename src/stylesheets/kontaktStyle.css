@@ -20,7 +20,7 @@
   font-size: 2rem;
   width: 60%;
   text-wrap: wrap;
-  font-weight: bold;
+  font-weight: 400;
   color: #6d675c;
 }
 #kontaktBelow {
@@ -79,6 +79,11 @@
 #datenschutzAkzeptieren {
   width: 15px;
   height: 15px;
+}
+.kontaktFormular h1 {
+  text-decoration: underline;
+  margin-top: 4.5rem;
+  font-size: 2.8rem;
 }
 
 @media (min-width: 576px) {
