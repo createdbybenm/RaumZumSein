@@ -68,6 +68,10 @@
     <div id="kontaktFormularMovable">
       <div class="kontaktFormular">
         <h1>Kontakt</h1>
+        <p id="warning">
+          Diese Seite befindet sich noch im Aufbau. Kontaktieren Sie mich doch
+          einfach über die E-Mail im Impressum. Ich freu mich auf Sie!
+        </p>
         <form method="post" class="kontaktDaten">
           <label>Name:</label>
           <input type="text" class="input" />
@@ -81,10 +85,15 @@
             class="input"
             style="min-height: 160px; max-height: 160px"
           ></textarea>
-          <label>
+          <label class="checkboxContainer">
             Ich habe die Datenschutzerklärung zu Kenntnis genommen
+            <input
+              type="checkbox"
+              checked="checked"
+              id="datenschutzAkzeptieren"
+            />
+            <span class="checkmark"></span>
           </label>
-          <input type="checkbox" id="datenschutzAkzeptieren" />
         </form>
         <div id="heroContactButton kontaktSendenButton">
           <button id="contactButton">

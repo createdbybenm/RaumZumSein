@@ -10,8 +10,11 @@
 #portraitImg {
   height: 450px;
   width: 350px;
-  background-color: white;
+  background-image: url(../../assets/img/PortraitV1.png);
   border-radius: 2rem;
+  box-shadow: 0px 0px 10px 0 #575757 inset;
+  background-position: center;
+  background-size: cover;
 }
 
 #zitat {
@@ -47,11 +50,6 @@
 .input:hover {
   box-shadow: 0px 0px 3px 0 #575757 inset;
 }
-
-#datenschutzAkzeptieren {
-  background-color: red;
-  border-radius: 5px;
-}
 #datenschutzAkzeptieren:hover {
   box-shadow: 0px 0px 3px 0 #575757 inset;
 }
@@ -68,7 +66,8 @@
   flex-direction: column;
 
   align-items: center;
-  row-gap: 2rem;
+  row-gap: 0.25rem; /* Ohne Fehlermeldung 2rem */
+  margin-bottom: -3.35rem;
 }
 .kontaktDaten {
   display: flex;
@@ -84,6 +83,61 @@
   text-decoration: underline;
   margin-top: 4.5rem;
   font-size: 2.8rem;
+}
+
+.checkboxContainer {
+  display: block;
+  position: relative;
+  margin: 0.5rem 0 0 0;
+  cursor: pointer;
+  font-size: 17px;
+  user-select: none;
+  padding-left: 2rem;
+}
+.checkboxContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  border-radius: 5px;
+  background-color: #e5dccb;
+  border: 1.7px solid #6d675c;
+}
+
+.checkboxContainer:hover input ~ .checkmark {
+  box-shadow: 0px 0px 3px 0 #575757 inset;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkboxContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+.checkboxContainer .checkmark:after {
+  left: 6.5px;
+  bottom: 3px;
+  width: 8px;
+  height: 16px;
+  border: solid #8c1e14;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#warning {
+  color: #8c1e14;
 }
 
 @media (min-width: 576px) {

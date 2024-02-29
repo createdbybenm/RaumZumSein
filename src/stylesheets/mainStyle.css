@@ -4,10 +4,14 @@ body {
   background: #d9cdb8;
   box-sizing: border-box;
   overflow-x: hidden;
+  height: 100%;
+}
+* {
+  font-weight: 400;
 }
 @media (min-width: 1152px) {
   html {
-    /*scroll-snap-type: y mandatory;*/
+    /* scroll-snap-type: y mandatory; */
   }
   .section {
     scroll-snap-align: center;
@@ -171,6 +175,9 @@ nav a {
   padding: 2rem;
   text-align: center;
   margin-top: 10rem;
+  bottom: 0px;
+  position: relative;
+  width: calc(100% - 4rem);
 }
 #impressum:hover,
 #datenschutz:hover {
