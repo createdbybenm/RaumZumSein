@@ -22,6 +22,14 @@ const hideSidebar = () => {
   sideBar.classList.remove("animateSide");
 };
 
+// Darkmode Warning
+if (navigator.userAgent.match(/samsung/i)) {
+  alert(
+    "Ihr Browser (Samsung Internet) zeigt diese Website wenn Sie den Darkmode aktiviert haben möglicherweise nicht korrekt an" +
+      "Bitte erwägen Sie einen anderen Browser zu benutzen oder den Darkmode zu deaktivieren." +
+      "Empfohlen sind Firefox, Microsoft Edge, oder Google Chrome."
+  );
+}
 /*
 document.addEventListener("scroll", () => {
   if (window.scrollY > startingPosition) {
