@@ -8,14 +8,59 @@
   margin-bottom: -30rem;
 }
 
-#portraitImg {
+#portrait {
   height: 450px;
   width: 350px;
-  background-image: url(../../assets/img/PortraitV1.png);
+  /* background-image: url(../../assets/img/PortraitV1.png); */
+  /* background-image: url(../../assets/img/Animals.jpg); */
+  /* opacity: 0.2; */
+  /* background-color: #ff150014; */
   border-radius: 2rem;
-  box-shadow: 0px 0px 10px 0 #575757 inset;
+  box-shadow: 0px 0px 20px 0 #8c1e14 inset;
+  background-position: center;
+  /* background-size: cover; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+
+#portraitImage {
+  height: 450px;
+  width: 350px;
+  /* background-image: url(../../assets/img/PortraitV1.png); */
+  background-image: url(../../assets/img/Animals.jpg);
+  opacity: 0.25;
+  /* background-color: #ff150014; */
+  border-radius: 2rem;
+  /* box-shadow: 0px 0px 20px 0 #8c1e14 inset; */
   background-position: center;
   background-size: cover;
+  /* display: flex;
+  flex-direction: column; */
+  /* align-items: center; */
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#warnung {
+  text-align: center;
+  font-family: "Inter";
+  font-size: 2rem;
+  opacity: 1;
+  width: 75%;
+  text-wrap: wrap;
+  font-weight: 400;
+  color: #8c1e14;
+  text-shadow: 0px 4px 15px #ff6e6e;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 #zitat {
